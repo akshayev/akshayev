@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="252" viewBox="0 0 440 252" role="img" aria-label="Ghost Data Deletion-Audit Agent: Checks 518 data-deletion requests against messy evidence and reports what still exists. LLMs only handle narrow jobs, behind validation.">
+<style>
+  .k{font:600 11px system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;letter-spacing:.08em;text-transform:uppercase}
+  .n{font:700 18px system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;fill:#f1f5f9}
+  .d{font:400 13px system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;fill:#94a3b8}
+  .v{font:800 26px system-ui,-apple-system,'Segoe UI',Roboto,sans-serif}
+  .l{font:400 11px system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;fill:#94a3b8}
+  .s{font:500 12px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#64748b}
+</style>
+<rect x="0.5" y="0.5" width="439" height="251" rx="14" fill="#0b1220" stroke="#1e293b"/>
+<rect x="0.5" y="0.5" width="439" height="4" rx="2" fill="#fbbf24"/>
+<text x="22" y="34" class="k" fill="#fbbf24">AI agent</text>
+<text x="22" y="58" class="n">Ghost Data Deletion-Audit Agent</text>
+<text x="22" y="84" class="d">Checks 518 data-deletion requests against messy</text>
+<text x="22" y="102" class="d">evidence and reports what still exists. LLMs only</text>
+<text x="22" y="120" class="d">handle narrow jobs, behind validation.</text>
+<text x="22" y="176" class="v" fill="#fbbf24">#28</text>
+<text x="22" y="194" class="l">of 4,094 in</text>
+<text x="22" y="208" class="l">Orchestrate hackathon</text>
+<line x1="144" y1="150" x2="144" y2="204" stroke="#1e293b"/>
+<text x="154" y="176" class="v" fill="#34d399">375</text>
+<text x="154" y="194" class="l">automated tests</text>
+<line x1="276" y1="150" x2="276" y2="204" stroke="#1e293b"/>
+<text x="286" y="176" class="v" fill="#38bdf8">100%</text>
+<text x="286" y="194" class="l">status accuracy, 32</text>
+<text x="286" y="208" class="l">sample cases</text>
+<text x="22" y="236" class="s">Python · pytest · LLM validation gates</text>
+</svg>

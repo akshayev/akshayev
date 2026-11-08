@@ -1,0 +1,66 @@
+# Projects shown on the profile. One [[project]] block per project.
+#
+# TO ADD A PROJECT: copy a block, fill it in, and push. The GitHub Action
+# rebuilds the card (assets/projects/<slug>.svg) and the grid in README.md.
+# To preview locally: python3 scripts/build_projects.py
+#
+# Rules of thumb:
+#   - 2 or 3 metrics per project, each specific to THAT project.
+#   - Only use numbers you can point to in the project's own repo or README.
+#   - Keep description to about 2-3 short lines.
+#   - color is optional: sky, emerald, amber, violet, rose.
+
+[[project]]
+slug = "ghost-data-deletion-audit-agent"
+name = "Ghost Data Deletion-Audit Agent"
+kind = "AI agent"
+url = "https://github.com/akshayev/ghost-data-deletion-audit-agent"
+description = "Checks 518 data-deletion requests against messy evidence and reports what still exists. LLMs only handle narrow jobs, behind validation."
+stack = ["Python", "pytest", "LLM validation gates"]
+color = "amber"
+metrics = [
+  { value = "#28", label = "of 4,094 in Orchestrate hackathon" },
+  { value = "375", label = "automated tests" },
+  { value = "100%", label = "status accuracy, 32 sample cases" },
+]
+
+[[project]]
+slug = "citypulse-crm"
+name = "CityPulse CRM"
+kind = "Data pipeline"
+url = "https://github.com/akshayev/citypulse-crm"
+description = "Lead-gen CRM on a Bronze, Silver, Gold pipeline with data-quality gates, a dead-letter queue, provider fallbacks and daily cost quotas."
+stack = ["Python", "SQL", "Supabase", "Gemini"]
+color = "emerald"
+metrics = [
+  { value = "3", label = "pipeline layers, raw to scored" },
+  { value = "5", label = "retries with backoff (30s to 480s)" },
+  { value = "2", label = "LLM providers, auto fallback" },
+]
+
+[[project]]
+slug = "citypulse-market-intelligence-agent"
+name = "CityPulse Market Intelligence Agent"
+kind = "Data pipeline"
+url = "https://github.com/akshayev/CityPulse-AI-Market-Intelligence-Agent"
+description = "Scrapes, cleans, stores and analyzes local-market data, then writes a report. The first version of the pipeline CityPulse CRM grew from."
+stack = ["Python", "SQL", "Supabase", "Selenium"]
+color = "sky"
+metrics = [
+  { value = "5", label = "stages, scrape to dashboard" },
+  { value = "2", label = "scrape modes: SerpApi, Selenium" },
+]
+
+[[project]]
+slug = "job-seeker-agent"
+name = "Job Seeker Agent"
+kind = "AI agent"
+url = "https://github.com/akshayev/job-seeker-agent"
+description = "Reads a resume, finds matching jobs, scores each one and drafts a tailored cover letter. Capstone of the Google and Kaggle AI Agents course."
+stack = ["Python", "Gemini", "Streamlit"]
+color = "violet"
+metrics = [
+  { value = "3", label = "job boards searched" },
+  { value = "0-100", label = "match score per job" },
+  { value = "1", label = "click to a cover letter" },
+]

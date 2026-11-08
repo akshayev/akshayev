@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="252" viewBox="0 0 440 252" role="img" aria-label="Job Seeker Agent: Reads a resume, finds matching jobs, scores each one and drafts a tailored cover letter. Capstone of the Google and Kaggle AI Agents course.">
+<style>
+  .k{font:600 11px system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;letter-spacing:.08em;text-transform:uppercase}
+  .n{font:700 18px system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;fill:#f1f5f9}
+  .d{font:400 13px system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;fill:#94a3b8}
+  .v{font:800 26px system-ui,-apple-system,'Segoe UI',Roboto,sans-serif}
+  .l{font:400 11px system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;fill:#94a3b8}
+  .s{font:500 12px ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;fill:#64748b}
+</style>
+<rect x="0.5" y="0.5" width="439" height="251" rx="14" fill="#0b1220" stroke="#1e293b"/>
+<rect x="0.5" y="0.5" width="439" height="4" rx="2" fill="#a78bfa"/>
+<text x="22" y="34" class="k" fill="#a78bfa">AI agent</text>
+<text x="22" y="58" class="n">Job Seeker Agent</text>
+<text x="22" y="84" class="d">Reads a resume, finds matching jobs, scores each one</text>
+<text x="22" y="102" class="d">and drafts a tailored cover letter. Capstone of the</text>
+<text x="22" y="120" class="d">Google and Kaggle AI Agents course.</text>
+<text x="22" y="176" class="v" fill="#fbbf24">3</text>
+<text x="22" y="194" class="l">job boards searched</text>
+<line x1="144" y1="150" x2="144" y2="204" stroke="#1e293b"/>
+<text x="154" y="176" class="v" fill="#34d399">0-100</text>
+<text x="154" y="194" class="l">match score per job</text>
+<line x1="276" y1="150" x2="276" y2="204" stroke="#1e293b"/>
+<text x="286" y="176" class="v" fill="#38bdf8">1</text>
+<text x="286" y="194" class="l">click to a cover</text>
+<text x="286" y="208" class="l">letter</text>
+<text x="22" y="236" class="s">Python · Gemini · Streamlit</text>
+</svg>

@@ -17,10 +17,6 @@
 </p>
 
 <p align="center">
-  <img src="assets/numbers.svg" alt="By the numbers: rank 28 of 4,094 in HackerRank Orchestrate; 375 tests; 100% deletion-status accuracy; 518 requests audited" width="100%">
-</p>
-
-<p align="center">
   🏅 HackerRank Software Engineer certificate &nbsp;·&nbsp; 🎓 Google 5-Day AI Agents Intensive
 </p>
 
@@ -28,32 +24,26 @@
 
 ## 🏆 Selected work
 
+<!--PROJECTS:START-->
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3>🏅 <a href="https://github.com/akshayev/ghost-data-deletion-audit-agent">Ghost Data Deletion-Audit Agent</a></h3>
-      Checks 518 data-deletion requests against messy evidence (SQL, logs, PDFs, screenshots) and reports what still exists. <b>Rank 28 of 4,094</b> in HackerRank Orchestrate. A deterministic core does the work; LLMs only handle narrow jobs behind validation.<br><br>
-      <sub><code>Python</code> · <code>pytest</code> · <code>LLM validation gates</code></sub>
+      <a href="https://github.com/akshayev/ghost-data-deletion-audit-agent"><img src="assets/projects/ghost-data-deletion-audit-agent.svg" alt="Ghost Data Deletion-Audit Agent: Checks 518 data-deletion requests against messy evidence and reports what still exists. LLMs only handle narrow jobs, behind validation." width="100%"></a>
     </td>
     <td width="50%" valign="top">
-      <h3>⚡ <a href="https://github.com/akshayev/citypulse-crm">CityPulse CRM</a></h3>
-      Lead-gen CRM on a Bronze → Silver → Gold pipeline: Pydantic quality gates, dead-letter queue with backoff, provider fallbacks, daily cost quotas and LLM lead scoring.<br><br>
-      <sub><code>Python</code> · <code>SQL</code> · <code>Supabase</code> · <code>Gemini</code></sub>
+      <a href="https://github.com/akshayev/citypulse-crm"><img src="assets/projects/citypulse-crm.svg" alt="CityPulse CRM: Lead-gen CRM on a Bronze, Silver, Gold pipeline with data-quality gates, a dead-letter queue, provider fallbacks and daily cost quotas." width="100%"></a>
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3>🏙️ <a href="https://github.com/akshayev/CityPulse-AI-Market-Intelligence-Agent">CityPulse Market Intelligence Agent</a></h3>
-      Scrapes, cleans, stores and analyzes local-market data, then writes a report. The first version of the pipeline CityPulse CRM grew from.<br><br>
-      <sub><code>Python</code> · <code>SQL</code> · <code>Supabase</code> · <code>Selenium</code></sub>
+      <a href="https://github.com/akshayev/CityPulse-AI-Market-Intelligence-Agent"><img src="assets/projects/citypulse-market-intelligence-agent.svg" alt="CityPulse Market Intelligence Agent: Scrapes, cleans, stores and analyzes local-market data, then writes a report. The first version of the pipeline CityPulse CRM grew from." width="100%"></a>
     </td>
     <td width="50%" valign="top">
-      <h3>🕵️ <a href="https://github.com/akshayev/job-seeker-agent">Job Seeker Agent</a></h3>
-      Reads a resume, finds matching jobs, scores each one and drafts a tailored cover letter. Capstone of the Google and Kaggle AI Agents course.<br><br>
-      <sub><code>Python</code> · <code>Gemini</code> · <code>Streamlit</code></sub>
+      <a href="https://github.com/akshayev/job-seeker-agent"><img src="assets/projects/job-seeker-agent.svg" alt="Job Seeker Agent: Reads a resume, finds matching jobs, scores each one and drafts a tailored cover letter. Capstone of the Google and Kaggle AI Agents course." width="100%"></a>
     </td>
   </tr>
 </table>
+<!--PROJECTS:END-->
 
 ### How the CityPulse pipeline flows
 
