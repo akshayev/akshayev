@@ -18,45 +18,45 @@
 <circle cx="34" cy="91" r="5" fill="#38bdf8"/>
 <line x1="34" y1="97" x2="34" y2="131" stroke="#1e293b" stroke-width="2"/>
 <text x="52" y="96" class="r">akshayev</text>
-<text x="52" y="114" class="m">commit · feat: UI-style profile with live activity card, by-th…</text>
+<text x="52" y="114" class="m">commit · feat: data-driven project cards with per-project metr…</text>
 <text x="520" y="96" class="s" text-anchor="end">today</text>
 </g>
 <g class="row" style="animation-delay:0.22s">
 <circle cx="34" cy="128" r="5" fill="#38bdf8"/>
 <line x1="34" y1="134" x2="34" y2="168" stroke="#1e293b" stroke-width="2"/>
 <text x="52" y="133" class="r">akshayev</text>
-<text x="52" y="151" class="m">commit · feat: redesign profile README with live activity, pip…</text>
+<text x="52" y="151" class="m">commit · feat: UI-style profile with live activity card, by-th…</text>
 <text x="520" y="133" class="s" text-anchor="end">today</text>
 </g>
 <g class="row" style="animation-delay:0.34s">
 <circle cx="34" cy="165" r="5" fill="#38bdf8"/>
 <line x1="34" y1="171" x2="34" y2="205" stroke="#1e293b" stroke-width="2"/>
 <text x="52" y="170" class="r">akshayev</text>
-<text x="52" y="188" class="m">commit · docs: add profile README</text>
+<text x="52" y="188" class="m">commit · feat: redesign profile README with live activity, pip…</text>
 <text x="520" y="170" class="s" text-anchor="end">today</text>
 </g>
 <g class="row" style="animation-delay:0.46s">
-<circle cx="34" cy="202" r="5" fill="#a78bfa"/>
+<circle cx="34" cy="202" r="5" fill="#38bdf8"/>
 <line x1="34" y1="208" x2="34" y2="242" stroke="#1e293b" stroke-width="2"/>
-<text x="52" y="207" class="r">portfolio-main</text>
-<text x="52" y="225" class="m">PR opened · docs: replace absolute local paths with relative links</text>
+<text x="52" y="207" class="r">akshayev</text>
+<text x="52" y="225" class="m">commit · docs: add profile README</text>
 <text x="520" y="207" class="s" text-anchor="end">today</text>
 </g>
 <g class="row" style="animation-delay:0.58s">
 <circle cx="34" cy="239" r="5" fill="#a78bfa"/>
 <line x1="34" y1="245" x2="34" y2="279" stroke="#1e293b" stroke-width="2"/>
-<text x="52" y="244" class="r">CityPulse-AI-Market-Intellige…</text>
-<text x="52" y="262" class="m">PR opened · docs: fix placeholder clone URL in README</text>
+<text x="52" y="244" class="r">portfolio-main</text>
+<text x="52" y="262" class="m">PR opened · docs: replace absolute local paths with relative links</text>
 <text x="520" y="244" class="s" text-anchor="end">today</text>
 </g>
 <g class="row" style="animation-delay:0.70s">
 <circle cx="34" cy="276" r="5" fill="#a78bfa"/>
-<text x="52" y="281" class="r">citypulse-crm</text>
-<text x="52" y="299" class="m">PR opened · docs: remove stray dots from README header</text>
+<text x="52" y="281" class="r">CityPulse-AI-Market-Intellige…</text>
+<text x="52" y="299" class="m">PR opened · docs: fix placeholder clone URL in README</text>
 <text x="520" y="281" class="s" text-anchor="end">today</text>
 </g>
 <text x="572" y="43" class="t">Last 16 weeks</text>
-<text x="572" y="62" class="s">500 contributions</text>
+<text x="572" y="62" class="s">506 contributions</text>
 <rect x="572" y="98" width="14" height="14" rx="3" fill="#134e4a"/>
 <rect x="572" y="115" width="14" height="14" rx="3" fill="#1e293b"/>
 <rect x="572" y="132" width="14" height="14" rx="3" fill="#1e293b"/>
@@ -162,7 +162,7 @@
 <rect x="810" y="166" width="14" height="14" rx="3" fill="#1e293b"/>
 <rect x="810" y="183" width="14" height="14" rx="3" fill="#134e4a"/>
 <rect x="810" y="200" width="14" height="14" rx="3" fill="#134e4a"/>
-<rect x="827" y="98" width="14" height="14" rx="3" fill="#14b8a6"/>
+<rect x="827" y="98" width="14" height="14" rx="3" fill="#5eead4"/>
 <text x="572" y="245" class="s">Less</text>
 <rect x="606" y="235" width="13" height="13" rx="3" fill="#1e293b"/>
 <rect x="623" y="235" width="13" height="13" rx="3" fill="#134e4a"/>
