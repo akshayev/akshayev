@@ -1,0 +1,33 @@
+name: Update consistency card
+
+# Publishes dist/stats.svg to the `output` branch as a single force-pushed
+# commit, so main's history never fills up with bot commits.
+on:
+  schedule:
+    - cron: "30 2 * * *"   # daily, ~08:00 IST
+  push:
+    paths:
+      - "scripts/build_stats.py"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build card
+        run: python3 scripts/build_stats.py dist/stats.svg
+      - name: Publish to output branch
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd dist
+          git init -q -b output
+          git add stats.svg
+          git -c user.name="github-actions[bot]" \
+              -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+              commit -qm "Update consistency card"
+          git push -qf "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git" output

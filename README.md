@@ -12,6 +12,16 @@ I'm a data engineer who builds data pipelines and LLM-powered agents in Python a
 
 I'm currently in my final year of a B.Tech in Information Technology at Cochin University of Science and Technology (CUSAT), graduating in 2027, and **open to data engineering and AI engineering roles** (remote, hybrid or on-site).
 
+### Highlights
+
+- **Top 1% of 4,094 participants:** ranked #28 in the HackerRank Orchestrate hackathon with the [Ghost Data Deletion-Audit Agent](https://github.com/akshayev/ghost-data-deletion-audit-agent), backed by 375 automated tests.
+- **Shipped and running:** [CityPulse CRM](https://github.com/akshayev/citypulse-crm) is [live](https://citypulse-crm.vercel.app), with CI, automated database backups and 39 merged pull requests.
+- **Steady delivery:** over 350 merged pull requests in the last 12 months, each one a small, reviewable change.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/akshayev/akshayev/output/stats.svg" alt="GitHub consistency: contributions in the last 12 months, active days in the last 30 days, current and longest streak" width="100%">
+</p>
+
 ## Featured work
 
 <!--PROJECTS:START-->
@@ -31,7 +41,7 @@ I'm currently in my final year of a B.Tech in Information Technology at Cochin U
 
 | Area | Tools |
 | --- | --- |
-| Languages | Python, SQL, JavaScript |
+| Languages | Python, SQL |
 | Data engineering | Medallion (Bronze/Silver/Gold) pipelines, Pydantic data contracts, PostgreSQL, Supabase |
 | AI and LLMs | Gemini, Groq, multi-provider fallback, output validation |
 | Quality and delivery | pytest, golden-output tests, GitHub Actions, Git |
