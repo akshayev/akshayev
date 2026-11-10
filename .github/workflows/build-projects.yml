@@ -1,8 +1,6 @@
-name: Refresh profile
+name: Build project cards
 
 on:
-  schedule:
-    - cron: "17 */6 * * *"   # every 6 hours: refresh the activity card
   push:
     paths:                    # when a project is added or edited: rebuild the cards
       - "projects.toml"
@@ -13,16 +11,12 @@ permissions:
   contents: write
 
 jobs:
-  refresh:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: Build project cards and grid
         run: python3 scripts/build_projects.py
-      - name: Refresh the activity card
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python3 scripts/update_activity.py
       - name: Commit if changed
         run: |
           git add -A
@@ -31,5 +25,5 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "chore: refresh profile"
+          git commit -m "chore: rebuild project cards"
           git push

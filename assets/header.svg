@@ -1,46 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="220" viewBox="0 0 900 220" role="img" aria-labelledby="t d">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="200" viewBox="0 0 900 200" role="img" aria-labelledby="t d">
   <title id="t">Akshay EV</title>
-  <desc id="d">Data engineering and AI agents. Python and SQL.</desc>
+  <desc id="d">Data Engineer. Data pipelines and AI agents in Python and SQL.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0b1220"/>
-      <stop offset="1" stop-color="#0f3a4a"/>
-    </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#38bdf8"/>
-      <stop offset="1" stop-color="#34d399"/>
+      <stop offset="1" stop-color="#10283a"/>
     </linearGradient>
     <style>
-      .name { font: 700 54px system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; fill: #f8fafc; }
-      .tag  { font: 500 22px system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; fill: #bae6fd; }
-      .code { font: 500 16px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #6ee7b7; }
-      .rise { opacity: 0; animation: rise 0.9s ease-out forwards; }
-      .d1 { animation-delay: .15s; } .d2 { animation-delay: .45s; } .d3 { animation-delay: .8s; }
-      .node { animation: pulse 2.4s ease-in-out infinite; }
-      .n2 { animation-delay: .4s; } .n3 { animation-delay: .8s; }
-      .flow { stroke-dasharray: 6 8; animation: dash 1.6s linear infinite; }
-      @keyframes rise  { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
-      @keyframes pulse { 0%,100% { opacity: .55; } 50% { opacity: 1; } }
-      @keyframes dash  { to { stroke-dashoffset: -28; } }
-      @media (prefers-reduced-motion: reduce) { .rise, .node, .flow { animation: none; opacity: 1; } }
+      .name { font: 700 50px system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; fill: #f8fafc; }
+      .role { font: 500 21px system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; fill: #cbd5e1; }
+      .meta { font: 500 14px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #7dd3fc; }
+      .lbl  { font: 500 12px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #94a3b8; }
     </style>
   </defs>
-  <rect width="900" height="220" rx="16" fill="url(#bg)"/>
-  <rect x="48" y="150" width="84" height="4" rx="2" fill="url(#accent)"/>
+  <rect width="900" height="200" rx="14" fill="url(#bg)"/>
+  <rect x="48" y="132" width="64" height="3" rx="1.5" fill="#38bdf8"/>
 
-  <text x="48" y="92" class="name rise d1">Akshay EV</text>
-  <text x="48" y="130" class="tag rise d2">Data engineering &#183; AI agents</text>
-  <text x="48" y="186" class="code rise d3">python &#183; sql &#183; pipelines that check themselves</text>
+  <text x="48" y="84" class="name">Akshay EV</text>
+  <text x="48" y="116" class="role">Data Engineer · Data pipelines and AI agents</text>
+  <text x="48" y="166" class="meta">Python · SQL · PostgreSQL · LLM systems</text>
 
-  <!-- Bronze -> Silver -> Gold, animated -->
-  <g transform="translate(600 70)">
-    <line x1="30" y1="40" x2="120" y2="40" stroke="#38bdf8" stroke-width="2" class="flow"/>
-    <line x1="150" y1="40" x2="240" y2="40" stroke="#38bdf8" stroke-width="2" class="flow"/>
-    <circle cx="20"  cy="40" r="18" fill="#b45309" class="node"/>
-    <circle cx="140" cy="40" r="18" fill="#94a3b8" class="node n2"/>
-    <circle cx="260" cy="40" r="18" fill="#fbbf24" class="node n3"/>
-    <text x="20"  y="86" text-anchor="middle" class="code" style="font-size:13px">bronze</text>
-    <text x="140" y="86" text-anchor="middle" class="code" style="font-size:13px">silver</text>
-    <text x="260" y="86" text-anchor="middle" class="code" style="font-size:13px">gold</text>
+  <!-- Bronze -> Silver -> Gold -->
+  <g transform="translate(610 72)">
+    <line x1="30" y1="28" x2="110" y2="28" stroke="#334155" stroke-width="2"/>
+    <line x1="150" y1="28" x2="230" y2="28" stroke="#334155" stroke-width="2"/>
+    <circle cx="20"  cy="28" r="12" fill="#b45309"/>
+    <circle cx="130" cy="28" r="12" fill="#94a3b8"/>
+    <circle cx="240" cy="28" r="12" fill="#eab308"/>
+    <text x="20"  y="66" text-anchor="middle" class="lbl">bronze</text>
+    <text x="130" y="66" text-anchor="middle" class="lbl">silver</text>
+    <text x="240" y="66" text-anchor="middle" class="lbl">gold</text>
   </g>
 </svg>
