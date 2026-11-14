@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="168" viewBox="0 0 900 168" role="img" aria-label="1,161 contributions, 27/30 days active, 9 days current streak, 16 days longest streak">
+<style>
+  .t{font:600 12px system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;fill:#94a3b8;letter-spacing:.08em;text-transform:uppercase}
+  .v{font:800 30px system-ui,-apple-system,'Segoe UI',Roboto,sans-serif}
+  .a{font:600 14px system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;fill:#e2e8f0}
+  .b{font:400 12px system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;fill:#64748b}
+</style>
+<rect x="0.5" y="0.5" width="899" height="167" rx="14" fill="#0b1220" stroke="#1e293b"/>
+<text x="28" y="38" class="t">GitHub consistency</text>
+<text x="872" y="38" class="b" text-anchor="end">updated daily from the public contribution graph</text>
+<text x="28" y="96" class="v" fill="#38bdf8">1,161</text>
+<text x="28" y="120" class="a">contributions</text>
+<text x="28" y="138" class="b">in the last 12 months</text>
+<line x1="225" y1="64" x2="225" y2="142" stroke="#1e293b"/>
+<text x="239" y="96" class="v" fill="#34d399">27/30</text>
+<text x="239" y="120" class="a">days active</text>
+<text x="239" y="138" class="b">in the last 30 days</text>
+<line x1="436" y1="64" x2="436" y2="142" stroke="#1e293b"/>
+<text x="450" y="96" class="v" fill="#fbbf24">9 days</text>
+<text x="450" y="120" class="a">current streak</text>
+<text x="450" y="138" class="b">as of today</text>
+<line x1="647" y1="64" x2="647" y2="142" stroke="#1e293b"/>
+<text x="661" y="96" class="v" fill="#a78bfa">16 days</text>
+<text x="661" y="120" class="a">longest streak</text>
+<text x="661" y="138" class="b">in the last 12 months</text>
+</svg>
