@@ -85,7 +85,7 @@ def render(s: dict) -> str:
 </style>""",
          f'<rect x="0.5" y="0.5" width="{w-1}" height="{h-1}" rx="14" fill="#0b1220" stroke="#1e293b"/>',
          '<text x="28" y="38" class="t">GitHub consistency</text>',
-         f'<text x="{w-28}" y="38" class="b" text-anchor="end">updated daily from the public contribution graph</text>']
+         f'<text x="{w-28}" y="38" class="b" text-anchor="end">refreshed every few hours from the public contribution graph</text>']
     col = (w - 56) / len(tiles)
     for i, (value, label, sub, color) in enumerate(tiles):
         x = 28 + i * col
