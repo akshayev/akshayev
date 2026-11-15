@@ -22,6 +22,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Build card
+        env:
+          STATS_TOKEN: ${{ secrets.STATS_TOKEN }}   # optional: enables the merged-PR tile (private repos)
         run: python3 scripts/build_stats.py dist/stats.svg
       - name: Publish to output branch
         env:

@@ -16,7 +16,7 @@ I'm currently in my final year of a B.Tech in Information Technology at Cochin U
 
 - **Top 1% of 4,094 participants:** ranked #28 in the HackerRank Orchestrate hackathon with the [Ghost Data Deletion-Audit Agent](https://github.com/akshayev/ghost-data-deletion-audit-agent), backed by 375 automated tests.
 - **Shipped and running:** [CityPulse CRM](https://github.com/akshayev/citypulse-crm) is [live](https://citypulse-crm.vercel.app), with CI, automated database backups and 39 merged pull requests.
-- **Steady delivery:** over 380 merged pull requests in the last 12 months, each one a small, reviewable change.
+- **Steady delivery:** every change ships as a small, reviewable pull request, and the live count of merged PRs is on the card below.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/akshayev/akshayev/output/stats.svg" alt="GitHub consistency: contributions in the last 12 months, active days in the last 30 days, current and longest streak" width="100%">
