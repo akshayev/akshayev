@@ -1,17 +1,27 @@
 #!/usr/bin/env python3
-"""Render a consistency card (contributions, active days, streaks) as an SVG.
+"""Render a consistency card (contributions, merged PRs, active days, streaks) as an SVG.
 
 Data source: the PUBLIC contribution graph at github.com/users/<user>/contributions,
 i.e. exactly what a recruiter sees on the profile (private work is counted only if
 "Include private contributions" is on in profile settings, with no repo names).
 
+Merged-PR tile: counts PRs you merged in the last 12 months across ALL repos,
+private ones included (just a number, no repo names). That needs a token that can
+read your private repos, so it is read from the STATS_TOKEN env var (a repo secret
+in the workflow). Without STATS_TOKEN, or if the lookup fails, the tile is simply
+left off and the rest of the card still updates.
+
 Standard library only. Usage: python3 scripts/build_stats.py [output.svg]
-On any fetch/parse failure it exits non-zero WITHOUT writing, so the last good
-card stays published.
+On any contribution-graph fetch/parse failure it exits non-zero WITHOUT writing,
+so the last good card stays published.
 """
+import json
+import os
 import re
 import sys
+import urllib.parse
 import urllib.request
+from datetime import date, timedelta
 from pathlib import Path
 from xml.sax.saxutils import escape
 
@@ -24,6 +34,23 @@ def fetch() -> str:
     req = urllib.request.Request(URL, headers={"User-Agent": "profile-stats-builder"})
     with urllib.request.urlopen(req, timeout=30) as r:
         return r.read().decode("utf-8")
+
+
+def merged_prs(token: str) -> int:
+    """PRs authored by USER and merged in the last 365 days (GitHub search API)."""
+    since = (date.today() - timedelta(days=365)).isoformat()
+    query = urllib.parse.urlencode({"q": f"author:{USER} type:pr is:merged merged:>={since}", "per_page": 1})
+    req = urllib.request.Request(
+        f"https://api.github.com/search/issues?{query}",
+        headers={
+            "User-Agent": "profile-stats-builder",
+            "Accept": "application/vnd.github+json",
+            "X-GitHub-Api-Version": "2022-11-28",
+            "Authorization": f"Bearer {token}",
+        },
+    )
+    with urllib.request.urlopen(req, timeout=30) as r:
+        return int(json.load(r)["total_count"])
 
 
 def parse(html: str) -> list[tuple[str, int]]:
@@ -69,8 +96,10 @@ def plural(n: int, word: str) -> str:
 
 def render(s: dict) -> str:
     w, h = 900, 168
-    tiles = [
-        (f'{s["total"]:,}', "contributions", "in the last 12 months", "#38bdf8"),
+    tiles = [(f'{s["total"]:,}', "contributions", "in the last 12 months", "#38bdf8")]
+    if s.get("prs") is not None:
+        tiles.append((f'{s["prs"]:,}', "merged PRs", "in the last 12 months", "#f472b6"))
+    tiles += [
         (f'{s["active30"]}/30', "days active", "in the last 30 days", "#34d399"),
         (plural(s["current"], "day"), "current streak", "as of today", "#fbbf24"),
         (plural(s["longest"], "day"), "longest streak", "in the last 12 months", "#a78bfa"),
@@ -105,6 +134,13 @@ def main() -> int:
     except Exception as exc:
         print(f"stats unavailable, keeping previous card: {exc}", file=sys.stderr)
         return 1
+    token = os.environ.get("STATS_TOKEN", "").strip()
+    s["prs"] = None
+    if token:
+        try:
+            s["prs"] = merged_prs(token)
+        except Exception as exc:  # expired/revoked token etc.: degrade, don't freeze the whole card
+            print(f"::warning::merged-PR tile skipped, check the STATS_TOKEN secret: {exc}", file=sys.stderr)
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(render(s), encoding="utf-8")
     print(f"Wrote {out}: {s}")
