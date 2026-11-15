@@ -2,9 +2,12 @@ name: Update consistency card
 
 # Publishes dist/stats.svg to the `output` branch as a single force-pushed
 # commit, so main's history never fills up with bot commits.
+# Runs every 3 hours so the card stays close to the live profile total (a daily
+# run left it up to a day behind). Minute 17 is deliberate: GitHub delays
+# top-of-the-hour scheduled runs the most.
 on:
   schedule:
-    - cron: "30 2 * * *"   # daily, ~08:00 IST
+    - cron: "17 */3 * * *"
   push:
     paths:
       - "scripts/build_stats.py"
